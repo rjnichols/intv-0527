@@ -43,6 +43,14 @@ Review this code as you would a real code review on your team. Consider:
 
 ---
 
+## Expected Load
+
+- ~200 registered API clients
+- ~500 requests/second at peak
+- API keys are 64-character random hex strings
+
+---
+
 ## Files to Review
 
 1. `ApiKeyAuthenticationHandler.cs` — The authentication handler
@@ -181,11 +189,3 @@ app.MapControllers();
 
 app.Run();
 ```
-
----
-
-## Expected Load
-
-- ~200 registered API clients
-- ~500 requests/second at peak
-- API keys are 64-character random hex strings
